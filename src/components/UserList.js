@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Container, Form, Row, Col } from 'react-bootstrap';
 import User from './User';
 import users from '../data/users';
 
@@ -18,7 +15,7 @@ class UserList extends Component {
         }
     }
 
-    onSearchInputChange = (event) => {
+    onSearchInputChange(event) {
         if (event.target.value) {
             this.getFilteredUsers(event.target.value)
         } else {

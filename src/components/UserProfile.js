@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import Image from 'react-bootstrap/Image';
+import { Image } from 'react-bootstrap';
 import './components.css';
 
 class UserProfile extends Component {
+
     render() {
         return (
             <div>

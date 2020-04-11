@@ -1,14 +1,17 @@
-import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
+import React, { Component } from 'react';
+import { Navbar } from 'react-bootstrap';
 
-const NavBar = () => {
-    return (
-        <div>
-            <Navbar bg="light" expand="lg">
-                <Navbar.Brand>React Bootstrap Example</Navbar.Brand>
-            </Navbar>
-        </div>
-    )
+class NavBar extends Component {
+
+    render() {
+        return (
+            <div>
+                <Navbar bg="light" expand="lg">
+                    <Navbar.Brand>React Bootstrap Example</Navbar.Brand>
+                </Navbar>
+            </div>
+        )
+    }
 }
 
 export default NavBar;
